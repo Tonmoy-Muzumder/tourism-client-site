@@ -18,12 +18,26 @@ const Footer = () => {
 
     <hr />
 
-    <div className='text-white d-flex justify-content-evenly text-start fs-6'>
+    <div className='text-white d-flex justify-content-evenly text-start'>
         <div>
             <h3>About TourX</h3>
             <p>You can choose your Place <br /> where you want to Travel. <br /> Have a nice journey!</p>
 
         <Link to="">ABOUT US</Link>
+
+        <div className='text-white my-3'>
+         
+           
+            <div style={{fontSize:20}}>
+                <span>FOLLOW US : </span>
+            <Link to=""> {fb} </Link>
+            <Link to=""> {twitter} </Link>
+            <Link to=""> {linkedIn} </Link>
+            <Link to=""> {git}</Link> 
+           </div>
+           
+
+    </div>
         </div>
 
 
@@ -61,18 +75,11 @@ const Footer = () => {
     </div>
     <br />
     <hr />
-
-    <div className='text-white container d-flex justify-content-around'>
-            <h5>©copyright 2021, Tour Travels.</h5> 
-            <div style={{fontSize:20}}>
-                <span>FOLLOW US | </span>
-            <Link to=""> {fb} </Link>
-            <Link to=""> {twitter} </Link>
-            <Link to=""> {linkedIn} </Link>
-            <Link to=""> {git}</Link> |
-            </div>
-
-    </div>
+   
+   <div>
+   <h5 className='text-white'>©copyright 2021, Tour Travels.</h5> 
+   </div>
+    
     <br />
     <br />
    
