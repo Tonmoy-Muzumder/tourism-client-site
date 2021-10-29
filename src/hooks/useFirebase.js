@@ -17,8 +17,10 @@ const useFirebase = () => {
         signInWithPopup(auth, googleProvider)
             .then(result => {
                 setUser(result.user);
+                
             })
             .finally(() => setIsLoading(false));
+            
     };
     useEffect(() => {
         const unsubscribed = onAuthStateChanged(auth, user => {

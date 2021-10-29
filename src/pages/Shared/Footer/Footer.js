@@ -13,7 +13,7 @@ const Footer = () => {
     return (
         <div className='bg-dark'>
               <div className="my-5">
-              <h1  style={{color: 'gray'}} className='m-0'>Tour<span className='text-danger'>X</span></h1>
+              <h1  style={{color: 'white'}} className='m-0'>Tour<span className='text-danger'>X</span></h1>
               </div>
 
     <hr />
@@ -67,8 +67,8 @@ const Footer = () => {
                     <p>250 Main Street, Mirpur-12, Dhaka. <br />
                     <br />
 
-                        Tell 01634155401 <br />
-                        Tell 01634155401 <br /> <br />
+                        Call - 01634155401 <br />
+                        Call -  01634155401 <br /> <br />
                         Email: tonmoymuzumder1@gmail.com</p> <br />
                 </div>
         </div>

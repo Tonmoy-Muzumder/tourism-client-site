@@ -5,6 +5,7 @@ import Header from './pages/Shared/Header/Header';
 import Footer from './pages/Shared/Footer/Footer';
 import Login from './pages/Login/Login/Login';
 import AuthProvider from './contexts/AuthProvider';
+import NotFoundPage from './NotFound/NotFoundPage';
 function App() {
   return (
     <div className="App">
@@ -24,6 +25,10 @@ function App() {
           <Route path="/login">
               <Login></Login>
           </Route>
+
+          <Router path="*">
+            <NotFoundPage></NotFoundPage>
+          </Router>
        </Switch>
        <Footer></Footer>
      </Router>

@@ -8,7 +8,7 @@ const Banner = () => {
         <div>
             <Carousel>
   <Carousel.Item>
-    <img
+    <img style={{height: 500}}
       className="d-block w-100"
       src={Banner1}
       alt="First slide"
@@ -22,7 +22,7 @@ const Banner = () => {
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
-    <img
+    <img style={{height: 500}}
       className="d-block w-100"
       src={Banner2}
       alt="Second slide"
