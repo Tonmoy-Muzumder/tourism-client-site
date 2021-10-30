@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Plan = ({plan}) => {
-    const {img, name, description, time, price} = plan;
+    const {_id, img, name, description, time, price} = plan;
     return (
 
         <div className="col-lg-4 col-md-6 col-sm-6 col-12">
@@ -15,7 +16,9 @@ const Plan = ({plan}) => {
                   <h6>{time}</h6>
                 
             </div>
-            <button className="bg-warning text-white fs-3 my-5">BOOK NOW</button>
+            <Link to={`/booking/${_id}`}>
+                <button className="btn btn-warning my-5">Book Now</button>
+            </Link>
             </div>
             
            </div>

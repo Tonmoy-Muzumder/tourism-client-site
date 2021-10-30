@@ -8,6 +8,8 @@ import AuthProvider from './contexts/AuthProvider';
 import NotFoundPage from './pages/NotFound/NotFoundPage';
 import AddNewPlan from './pages/AddNewPlan/AddNewPlan';
 import Plans from './pages/Plans/Plans';
+import Booking from './pages/Booking/Booking';
+
 function App() {
   return (
     <div className="App">
@@ -30,6 +32,10 @@ function App() {
 
           <Route path="/login">
               <Login></Login>
+          </Route>
+
+          <Route path="/booking/:id">
+           <Booking></Booking>
           </Route>
 
           <Route path="/addnewplan">
