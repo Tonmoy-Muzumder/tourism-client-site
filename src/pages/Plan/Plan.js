@@ -19,12 +19,8 @@ const Plan = ({plan}) => {
             <Link to={`/booking/${_id}`}>
                 <button className="btn btn-warning my-5">Book Now</button>
             </Link>
-            </div>
-            
-           </div>
-
-           
-           
+            </div>           
+           </div>    
         </div>
     );
 };

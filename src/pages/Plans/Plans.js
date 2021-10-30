@@ -8,7 +8,7 @@ const Plans = () => {
 
 
     useEffect(() => {
-        const url = 'http://localhost:5000/plans';
+        const url = 'https://fierce-basin-76910.herokuapp.com/plans';
 
         fetch(url)
         .then(res => res.json())

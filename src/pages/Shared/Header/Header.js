@@ -20,14 +20,6 @@ const Header = () => {
     <Nav className="me-auto">
       <Nav.Link  as={HashLink} to="/home#home">HOME</Nav.Link>
       <Nav.Link   as={HashLink} to="/home#plans">PLANS </Nav.Link>
-      {/* <NavDropdown title="DASHBOARD" id="collasible-nav-dropdown">
-        <NavDropdown.Item as={HashLink} to="/myplans">MY PLANS</NavDropdown.Item>
-        <NavDropdown.Divider />
-        <NavDropdown.Item as={HashLink} to="/manage">MANAGE ALL PLANS</NavDropdown.Item>
-        <NavDropdown.Divider />
-        <NavDropdown.Item as={HashLink} to="/addnewplan">+ ADD A NEW PLAN</NavDropdown.Item>
-        <NavDropdown.Divider />
-      </NavDropdown> */}
     </Nav>
     <Nav>
     <Navbar.Text className="d-flex">
@@ -61,7 +53,7 @@ const Header = () => {
 <br />
 <br />
 <br />
-<br />
+
 
         </div>
     );

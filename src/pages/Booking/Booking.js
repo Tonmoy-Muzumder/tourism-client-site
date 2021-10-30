@@ -9,7 +9,7 @@ const Booking = () => {
 
 
     useEffect(() => {
-        fetch(`http://localhost:5000/plans/${id}`)
+        fetch(`https://fierce-basin-76910.herokuapp.com/plans/${id}`)
         .then(res => res.json())
         .then(data => setPlan(data))
         .catch(
@@ -19,7 +19,7 @@ const Booking = () => {
           )
     },[]);
     return (
-        <div className="text-center">
+        <div className="text-center my-4">
            <img className="img-fluid" src={plan.img} alt="" />
            <div className="text-start m-4 ">
             <h1 style={{color: 'coral', marginBottom: 15}}>{plan.name}</h1>

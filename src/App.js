@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
 
-     <AuthProvider>
+    <AuthProvider>
      <Router>
      <Header></Header>
        <Switch>
@@ -48,7 +48,7 @@ function App() {
        </Switch>
        <Footer></Footer>
      </Router>
-     </AuthProvider>
+    </AuthProvider>
       
     </div>
   );
