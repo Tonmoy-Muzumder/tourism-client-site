@@ -29,6 +29,9 @@ function App() {
           <Route path="/plans">
             <Plans></Plans>
           </Route>
+          <Route path="/aboutUs">
+            <Plans></Plans>
+          </Route>
 
           <Route path="/login">
               <Login></Login>

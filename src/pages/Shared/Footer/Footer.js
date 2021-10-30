@@ -77,7 +77,7 @@ const Footer = () => {
     <hr />
    
    <div>
-   <h5 className='text-white'>©copyright 2021, Tour Travels.</h5> 
+   <h5 className='text-white'>©copyright 2021, <span style={{color: 'coral'}}>TourX</span> .</h5> 
    </div>
     
     <br />
