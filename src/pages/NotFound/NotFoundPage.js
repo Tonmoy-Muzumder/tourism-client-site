@@ -1,9 +1,9 @@
 import React from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const NotFoundPage = () => {
-    const history = useHistory();
-    history.push('/home');
+    // const history = useHistory();
+    // history.push('/home');
     const SadEmoji = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGaZnAyJh-pFzMYYbFUDuSdzk_KtbpTlTbsw&usqp=CAU"
     return (
         <div style={{textAlign: 'center', color: 'gray'}}>
@@ -16,7 +16,7 @@ const NotFoundPage = () => {
 <br />
 <br />
                     <div>
-                        <Link to="/"><button  className='bg-primary text-white fs-4'>Back to Home</button></Link>
+                        <Link to="/home"><button  className='bg-primary text-white fs-4'>Back to Home</button></Link>
                     </div>
         </div>
     );

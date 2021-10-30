@@ -10,7 +10,7 @@ const Header = () => {
   const { user, logOut } = useAuth();
     return (
         <div>
-<Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+<Navbar  fixed="top"  collapseOnSelect expand="lg" bg="dark" variant="dark">
   <Container>
   <Navbar.Brand  as={HashLink} to="/home#home"> <div>
             <h1  style={{color: 'white', fontSize: 40}} >Tour<span className='text-danger'>X</span></h1>
@@ -20,12 +20,20 @@ const Header = () => {
     <Nav className="me-auto">
       <Nav.Link  as={HashLink} to="/home#home">HOME </Nav.Link>
       <Nav.Link   as={HashLink} to="/home#plans">PLANS </Nav.Link>
+      <NavDropdown title="DASHBOARD" id="collasible-nav-dropdown">
+        <NavDropdown.Item as={HashLink} to="/myplans">MY PLANS</NavDropdown.Item>
+        <NavDropdown.Divider />
+        <NavDropdown.Item as={HashLink} to="/manage">MANAGE ALL PLANS</NavDropdown.Item>
+        <NavDropdown.Divider />
+        <NavDropdown.Item as={HashLink} to="/addnewplan">+ ADD A NEW PLAN</NavDropdown.Item>
+        <NavDropdown.Divider />
+      </NavDropdown>
     </Nav>
     <Nav>
     <Navbar.Text>
     
     {!user.name && <div className="d-flex">
-     <h2>{user.name}</h2>
+     <p>{user.name}</p>
       <p>{user.email}</p>
     
   </div>

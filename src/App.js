@@ -5,7 +5,9 @@ import Header from './pages/Shared/Header/Header';
 import Footer from './pages/Shared/Footer/Footer';
 import Login from './pages/Login/Login/Login';
 import AuthProvider from './contexts/AuthProvider';
-import NotFoundPage from './NotFound/NotFoundPage';
+import NotFoundPage from './pages/NotFound/NotFoundPage';
+import AddNewPlan from './pages/AddNewPlan/AddNewPlan';
+import Plans from './pages/Plans/Plans';
 function App() {
   return (
     <div className="App">
@@ -22,8 +24,16 @@ function App() {
             <Home></Home>
           </Route>
 
+          <Route path="/plans">
+            <Plans></Plans>
+          </Route>
+
           <Route path="/login">
               <Login></Login>
+          </Route>
+
+          <Route path="/addnewplan">
+              <AddNewPlan></AddNewPlan>
           </Route>
 
           <Router path="*">
