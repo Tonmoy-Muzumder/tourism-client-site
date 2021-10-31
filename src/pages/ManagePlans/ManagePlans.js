@@ -1,16 +1,18 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
-import ManagePlan from '../ManagePlan/ManagePlan';
+import { Card, Button} from 'react-bootstrap';
 
 
 const ManagePlans = () => {
+
     const [plans, setPlans] = useState([]);
 
     useEffect(() => {
         fetch('https://fierce-basin-76910.herokuapp.com/plans')
         .then( res => res.json())
         .then(data => setPlans(data))
+        
     }, []);
 
 
@@ -22,7 +24,7 @@ const ManagePlans = () => {
         })
         .then(res => res.json())
         .then(data => {
-            console.log(data);
+          
             if(data.deletedCount){
                 alert('successfully deleted')
                 const remaining = plans.filter(plan => plan._id !== id);
@@ -31,27 +33,34 @@ const ManagePlans = () => {
             }
            
         })
-        return handleDelete;
+        
     }
   
     return (
-        <div>
+        <div className="container">
             <h1>Manage All Plans</h1>
 
-            <div className="container fluid">
-                <div className="row ">
-                <hr />
-                {
-                    plans.map(plan => <ManagePlan
-                        key={plan._id}
-                        plan={plan}
-                    ></ManagePlan>)
-                }
+
+            {
+                plans.map(plan =><Card
+                key= {plan._id}
+                plan={plan}
+                >
+                <Card.Img variant="top" className="img-fluid" src={plan.img} />
+                <Card.Body>
+               <Card.Title>{plan.name}</Card.Title>
+               <Card.Title>{plan.description}</Card.Title>
+               <Card.Title>{plan.price}</Card.Title>
+               <Card.Title>{plan.time}</Card.Title>
+    
+                <Button onClick={() => handleDelete(plan._id)} variant="primary">DELETE</Button>
+                </Card.Body>
+               </Card>)
+            }
+
+
                 
-                </div>
-                
-<hr />
-            </div>
+
 
         </div>
     );
