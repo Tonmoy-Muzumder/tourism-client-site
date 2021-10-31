@@ -8,6 +8,7 @@ import AuthProvider from './contexts/AuthProvider';
 import NotFoundPage from './pages/NotFound/NotFoundPage';
 import AddNewPlan from './pages/AddNewPlan/AddNewPlan';
 import Plans from './pages/Plans/Plans';
+import Blogs from './pages/Blogs/Blogs';
 import Booking from './pages/Booking/Booking';
 
 function App() {
@@ -29,6 +30,11 @@ function App() {
           <Route path="/plans">
             <Plans></Plans>
           </Route>
+
+          <Route path="/blogs">
+            <Blogs></Blogs>
+          </Route>
+
           <Route path="/aboutUs">
             <Plans></Plans>
           </Route>

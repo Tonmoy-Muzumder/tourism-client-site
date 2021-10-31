@@ -7,7 +7,7 @@ const Plan = ({plan}) => {
 
         <div className="col-lg-4 col-md-6 col-sm-6 col-12">
            <div style={{backgroundColor: 'lightcyan'}} className="my-5 rounded">
-           <img className="img-fluid" src={img} alt="" />
+           <img className="img-fluid mt-3 rounded" src={img} alt="" />
             <div className="text-start m-4 ">
             <h1 style={{color: 'coral', marginBottom: 15}}>{name}</h1>
             <h5 style={{ marginBottom: 15}}>{description}</h5>
