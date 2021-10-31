@@ -46,7 +46,7 @@ const ManagePlans = () => {
                 key= {plan._id}
                 plan={plan}
                 >
-                <Card.Img variant="top" className="img-fluid" src={plan.img} />
+                <Card.Img style={{height: 500}} className="img-fluid" src={plan.img} />
                 <Card.Body>
                <Card.Title>{plan.name}</Card.Title>
                <Card.Title>{plan.description}</Card.Title>
