@@ -29,7 +29,7 @@ const Header = () => {
   <NavDropdown title="DASHBOARD" id="collasible-nav-dropdown">
   <NavDropdown.Item className="text-primary fs-5" as={HashLink} to="/myplans">MY PLANS</NavDropdown.Item>
   <NavDropdown.Divider />
-  <NavDropdown.Item className="text-primary fs-5"  as={HashLink} to="/manage">MANAGE ALL PLANS</NavDropdown.Item>
+  <NavDropdown.Item className="text-primary fs-5"  as={HashLink} to="/managePlans">MANAGE ALL PLANS</NavDropdown.Item>
   <NavDropdown.Divider />
   <NavDropdown.Item className="text-primary fs-5"  as={HashLink} to="/addnewplan">+ ADD A NEW PLAN</NavDropdown.Item>
   <NavDropdown.Divider />

@@ -35,7 +35,7 @@ import { Container, Row, Col } from 'react-bootstrap';
                         <h3>{blog.description}</h3>
                         <br />
                         <br />
-                        <button className="bg-success text-white">SEE MORE...</button>
+                        <button className="bg-success text-white">SEE MORE BLOGS...</button>
                         </div>
                         <br />
                         <hr />

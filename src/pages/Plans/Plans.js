@@ -1,11 +1,13 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
+import useAuth from '../../hooks/useAuth';
 import Plan from '../Plan/Plan';
+import Spinner from 'react-bootstrap/Spinner'
 
 const Plans = () => {
     const [plans, setPlans] = useState([]);
-
+    const { isLoading } = useAuth();
 
     useEffect(() => {
         const url = 'https://fierce-basin-76910.herokuapp.com/plans';
@@ -14,6 +16,12 @@ const Plans = () => {
         .then(res => res.json())
         .then(data => setPlans(data))
     }, []);
+
+ 
+    if (isLoading) {
+        return <Spinner animation="border" variant="success" />
+    };
+    
     return (
         <div  id="plans">
             <div  className="my-5" >

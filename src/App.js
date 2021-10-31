@@ -10,6 +10,9 @@ import AddNewPlan from './pages/AddNewPlan/AddNewPlan';
 import Plans from './pages/Plans/Plans';
 import Blogs from './pages/Blogs/Blogs';
 import Booking from './pages/Booking/Booking';
+import PrivateRoute from '../src/pages/Login/PrivateRoute/PrivateRoute'
+import MyPlans from './pages/MyPlans/MyPlans';
+import ManagePlans from './pages/ManagePlans/ManagePlans';
 
 function App() {
   return (
@@ -43,12 +46,20 @@ function App() {
               <Login></Login>
           </Route>
 
-          <Route path="/booking/:id">
+          <PrivateRoute path="/booking/:id">
            <Booking></Booking>
-          </Route>
+          </PrivateRoute>
 
           <Route path="/addnewplan">
               <AddNewPlan></AddNewPlan>
+          </Route>
+
+          <Route path="/myplans">
+              <MyPlans></MyPlans>
+          </Route>
+
+          <Route path="/managePlans">
+              <ManagePlans></ManagePlans>
           </Route>
 
           <Router path="*">

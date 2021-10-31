@@ -19,7 +19,10 @@ const Booking = () => {
           )
     },[]);
     return (
-        <div className="text-center my-4">
+        <div className="container my-4">
+            <br />
+            <h1>Your are booking this Package</h1>
+            <br />
            <img className="img-fluid" src={plan.img} alt="" />
            <div className="text-start m-4 ">
             <h1 style={{color: 'coral', marginBottom: 15}}>{plan.name}</h1>
@@ -29,6 +32,9 @@ const Booking = () => {
                   <h6>{plan.time}</h6>
                 
             </div>
+<br />
+<br />
+            <button className="bg-warning fs-5 text-white">BOOKING...</button>
             </div>
         </div>
     );
